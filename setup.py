@@ -19,6 +19,8 @@ setup(name='openfsm',
       zip_safe=False,
       install_requires=[
           # -*- Extra requirements: -*-
+          'Products.LinguaPlone==2.1.1',
+          'plone.browserlayer==1.0.1',
       ],
       entry_points="""
       # -*- Entry points: -*-
