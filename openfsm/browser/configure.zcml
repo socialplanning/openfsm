@@ -4,11 +4,11 @@
     xmlns:i18n="http://namespaces.zope.org/i18n"
     >
 
-  <browser:resourceDirectory
+  <!--browser:resourceDirectory
      name="override-css"
      directory="css"
      layer="openfsm.skin.interfaces.IOpenFSMLayer"
-     />
+     /-->
   <browser:resourceDirectory
     name="fsmimg"
     directory="img"
