@@ -1,0 +1,28 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    >
+
+  <!-- profile edit -->
+  <!-- 
+  <browser:page
+     for="opencore.interfaces.member.IMemberFolder"
+     class=".view.FSMProfileEditView"
+     permission="cmf.ModifyPortalContent"
+     name="profile-edit"
+     layer="openfsm.skin.interfaces.IOpenFSMLayer"
+     />
+          
+  <browser:page
+     for="opencore.interfaces.member.IMemberFolder"
+     class="opencore.member.browser.view.ProfileView"
+     permission="zope2.View"
+     name="profile"
+     template="profile.pt"
+     layer="openfsm.skin.interfaces.IOpenFSMLayer"
+     />
+     -->
+
+
+</configure>

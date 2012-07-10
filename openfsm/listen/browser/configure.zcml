@@ -1,0 +1,20 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    >
+
+
+  <!-- list membership 
+  <browser:page
+    for="Products.listen.interfaces.IHaveSubscribers"
+    name="manage_membership"
+    class="opencore.listen.browser.view.NuiManageMembersView"
+    permission="listen.EditMailingList"
+    template="manage_membership.pt"
+    layer="openfsm.skin.interfaces.IOpenFSMLayer"
+    />-->
+
+
+</configure>
+

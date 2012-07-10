@@ -1,0 +1,27 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    >
+
+  <five:registerPackage package="openfsm" 
+                        initialize="openfsm.zinit.initialize" />
+  <include package=".skin" />
+
+  <include package=".browser" />
+
+  <include package=".member.browser" />
+
+  <include package=".nui.main" />
+
+  <include package=".listen.browser" />
+
+
+  <browser:view
+     for="*"
+     class=".utils.OpenFSMUtils"
+     name="oputils"
+     permission="zope.Public"
+     />
+
+</configure>

@@ -1,0 +1,20 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           >
+
+    <!-- 'The theme' Zope 3 browser layer -->
+
+
+  <browser:layer
+     name="openfsm"
+     interface=".interfaces.IOpenFSMLayer"
+     />
+  
+  <browser:skin
+     name="openfsm"
+     interface=".interfaces.IOpenFSMSkin"
+     />
+  
+</configure>
+
+

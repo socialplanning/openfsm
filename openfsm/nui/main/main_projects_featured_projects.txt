@@ -1,0 +1,25 @@
+<h2>Facilitation</h2>
+<ul>
+    <li><a href="http://openfsm.net/projects/fsm-wsf/project-home">FSM-WSF</a></li>
+	<li><a href="http://openfsm.net/projects/communication/project-home">Communication</a></li>
+	<li><a href="http://openfsm.net/projects/expansion/project-home">Expansion</a></li>
+	<li><a href="http://openfsm.net/projects/metodologia/project-home">Metodologia</a></li>
+	<li><a href="http://openfsm.net/projects/ressources/project-home">Resources</a></li>
+	<li><a href="http://openfsm.net/projects/strategy/project-home">Strategy</a></li>    
+	<li><a href="http://openfsm.net/projects/openfsm-info/project-home">OpenFSM Info</a></li>
+	<li><b><a href="http://openfsm.net/projects/resultfsm2009">FSM2009 results</a></b></li>
+</ul>
+<br />
+<h2>WSF websites</h2>
+<ul>
+    <li><a href="http://www.worldsocialforum.info/">worldsocialforum.info</a></li>
+    <li><a href="http://fsm2011.org/">fsm2011.org</a></li>
+    <li><a href="http://www.forumsocialpanamazonico.org/V-Forum">forumsocialpanamazonico.org</a></li>
+    <li><a href="http://www.wsf2008.net">wsf2008.net</a></li>
+    <li><a href="http://wsfprocess.net">wsfprocess.net</a></li>    
+    <li><a href="http://wsftv.net">wsftv.net</a></li>
+    <li><a href="http://www.forumsocialmundial.org.br">forumsocialmundial.org.br</a><br /><br />
+    <a href="http://www.forumsocialmundial.org.br"><img src="http://wiki.provisionslibrary.org/blog/wp-content/uploads/2009/01/forum_mundial.jpg" width="182" /></a></li>
+</ul>
+
+

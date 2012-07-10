@@ -1,0 +1,24 @@
+<div i18n:domain="opencore" id="oc-footer">
+  <ul class="oc-smallText">
+    <li><a i18n:translate="footer_about_link" tal:attributes="href string:${here/portal_url}/about">about</a></li>
+    <li><a i18n:translate="footer_contact_link" tal:attributes="href string:${here/portal_url}/contact-site-admin">contact</a></li>
+    <li><a i18n:translate="footer_news_link" tal:attributes="href string:${here/portal_url}/news">news</a></li>
+    <li><a i18n:translate="footer_help_link" tal:attributes="href string:${here/portal_url}/projects/openfsm-help">help</a></li>
+    <!-- <li><a tal:attributes="href string:${here/portal_url}/legal">legal</a></li> -->
+    <!-- <li><a tal:attributes="href string:${here/portal_url}/privacy">privacy</a></li> -->
+  </ul>
+
+  <div id="oc-footer-about" class="oc-smallText">
+    <span tal:replace="string:${view/portal_title}" /> is
+    <a i18n:translate="footer_num_people" tal:attributes="href string:${here/portal_url}/people"><span i18n:name="num_people" tal:replace="string:${view/nusers}"/> people</a> and
+    <a tal:attributes="href string:${here/portal_url}/projects"><span tal:replace="string:${view/projects_served_count}"/> <span tal:replace="view/project_noun">project</span>s</a> since
+    <span tal:replace="string:${view/dob}" />.<br />
+<p>
+The content of this website is licensed under a 
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 License</a>, unless otherwise noted by the content's producers.
+<br />
+    Powered by <a href="http://www.openplans.org">OpenPlans</a>.
+</p>
+    
+  </div>
+</div>

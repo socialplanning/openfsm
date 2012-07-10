@@ -1,0 +1,22 @@
+<tal:language
+    tal:define="available view/available;
+                languages view/languages;
+                showFlags view/showFlags;">
+    <ul  id="ic-topnav-langmenu" class="oc-dropdown-list" style="clear:both"
+        tal:condition="python:len(languages)>=2">
+        <tal:language repeat="lang languages">
+        <li tal:define="code lang/code;
+                        selected lang/selected" tal:condition="python:code!='az'"
+            tal:attributes="class python: selected and 'currentLanguage' or '';">
+                <a href=""
+                   tal:define="flag lang/flag|nothing;
+                               name lang/native"
+                   tal:attributes="href lang/url;
+                                   title name">
+                    <span tal:attributes="style python:selected and 'border-bottom: 1px dotted' or ''"
+                                 tal:content="name">language name</span>
+                </a>&nbsp; 
+        </li>
+        </tal:language>
+    </ul>
+</tal:language>

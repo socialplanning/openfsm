@@ -1,0 +1,157 @@
+<html i18n:domain="opencore"
+	metal:use-macro="here/@@standard_macros/master">
+	<body>
+		<head>
+			<title metal:fill-slot="title"
+				tal:content="string:About - ${view/portal_title}" />
+		</head>
+
+		<div metal:fill-slot="content">
+
+			<div id="oc-content-main">
+
+				<div class="oc-headingBlock">
+					<h1 tal:content="string:About ${view/portal_title}" />
+				</div>
+				<div i18n:translate="about_openfsm">
+					<p>
+						OpenFSM.net is a platform for participatory
+						social activism
+						<span>
+							provided by the World Social Forum.
+						</span>
+					</p>
+					<p>
+						Whether your group is an organisation, a
+						network, an ad hoc group preparing an activity
+						for WSF 2008, or
+						promoting a proposal for social transformation,
+						OpenFSM.net can help you work collectively.
+					</p>
+					<p>
+						OpenFSM.net also helps your intercommunication
+						with many other participants and groups in the
+						ESF all working	under the 
+							<a
+								href="http://wsf2008.net/eng/node/72">							
+							Charter of Principles of Social
+							Forums</a>
+						.
+					</p>
+					<p>
+
+						OpenFSM is about making World Social Forum a
+						continuous process.
+					</p>
+
+					<p>
+						With collaborative wiki pages and other tools
+						within “projects”, you and your group can:
+					</p>
+					<ul>
+						<li>
+							<p>
+								Present your cause in the project home
+								page
+							</p>
+						</li>
+						<li>
+							<p>
+								Collaborate on writing documents with
+								the wiki
+							</p>
+						</li>
+						<li>
+
+							<p>Publish news in the project blog</p>
+						</li>
+						<li>
+							<p>
+								Create and use mailing lists for the
+								project team or a for a wider
+								participant circle
+							</p>
+						</li>
+						<li>
+							<p>Store and share files</p>
+						</li>
+						<li>
+
+							<p>Share to-do lists</p>
+						</li>
+						<li>
+							<p>Upload photos</p>
+						</li>
+						<li>
+							<p>Contact people and other projects</p>
+						</li>
+						<li>
+
+							<p>
+								<span>
+									Each project space has their own
+									path (I.e:
+									www.openfsm.net/ProjectName)
+								</span>
+							</p>
+						</li>
+						<li>
+							<p>and more…</p>
+						</li>
+					</ul>
+					<p align="justify">
+						<span>
+							OpenFSM.net promotes the open space
+							philosophy. By default its pages and
+							contents are public and open to every person
+							working for another Europe and a better
+							world; however each project hosted in the
+							ESFOpen tool has the option to restrict its
+							space only to its participants.
+						</span>
+
+					</p>
+
+					<p align="justify">
+						<span>
+							OpenFSM.net promotes Copyleft. The
+							contents of the Open ESF are licensed under
+							Creative Common Share Alike Licence unless a
+							specific document specifies another licence.
+						</span>
+					</p>
+
+					<p>
+						If you need something else or you have any
+						suggestion or question, please
+						<a
+							tal:attributes="href string:${context/portal_url}/contact-site-admin">
+							<u>let us know</u>
+						</a>
+						. OpenFSM.net is using a fast evolving software
+						platform called
+						<a
+							href="http://www.openplans.org/projects/opencore">
+							OpenCore
+						</a> developed by <a href="http://topp.openplans.org">The Open Planning Project</a>.
+					</p>
+
+				</div>
+			</div><!-- content-main -->
+			<div id="oc-content-sidebar">
+				<div i18n:translate="about_let_us_know"
+					class="oc-getstarted">
+					<h2>Help!</h2>
+					<p>
+						The <a href="http://openfsm.net/projects/openfsm-website">OpenFSM Webteam</a> is here to help you. If you have a question,
+						<a
+							tal:attributes="href string:${context/portal_url}/contact-site-admin">
+							let us know
+						</a>
+						.
+					</p>
+				</div>
+			</div>
+		</div><!-- content-fill-slot -->
+	</body>
+</html>

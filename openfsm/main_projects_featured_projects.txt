@@ -1,0 +1,20 @@
+<h2>Facilitation</h2>
+<ul>
+    <li><a href="http://openfsm.net/projects/fsm-wsf/project-home">FSM-WSF</a></li>
+	<li><a href="http://openfsm.net/projects/communication/project-home">Communication</a></li>
+	<li><a href="http://openfsm.net/projects/expansion/project-home">Expansion</a></li>
+	<li><a href="http://openfsm.net/projects/metodologia/project-home">Metodologia</a></li>
+	<li><a href="http://openfsm.net/projects/ressources/project-home">Resources</a></li>
+	<li><a href="http://openfsm.net/projects/strategy/project-home">Strategy</a></li>    
+	<li><a href="http://openfsm.net/projects/openfsm-info/project-home">OpenFSM Info</a></li>
+</ul>
+<br />
+<h2>WSF websites</h2>
+<ul>
+    <li><a href="http://www.forumsocialpanamazonico.org/V-Forum">forumsocialpanamazonico.org</a></li>
+    <li><a href="http://www.wsf2008.net">wsf2008.net</a></li>
+    <li><a href="http://wsfprocess.net">wsfprocess.net</a></li>    
+    <li><a href="http://www.forumsocialmundial.org.br">forumsocialmundial.org.br</a></li>
+    <li><a href="http://wsftv.net">wsftv.net</a></li>
+</ul>
+

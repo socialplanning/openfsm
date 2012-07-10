@@ -1,0 +1,38 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    >
+
+  <browser:resourceDirectory
+     name="override-css"
+     directory="css"
+     layer="openfsm.skin.interfaces.IOpenFSMLayer"
+     />
+  <browser:resourceDirectory
+    name="fsmimg"
+    directory="img"
+    layer="openfsm.skin.interfaces.IOpenFSMLayer"
+    />
+
+  <!-- footer -->
+  <browser:page
+     for="*"
+     class="opencore.browser.base.BaseView"
+     permission="zope.Public"
+     name="oc-footer"
+     template="footer.pt"
+     layer="openfsm.skin.interfaces.IOpenFSMLayer"
+     />
+  <!--browser:page
+    for="Products.listen.interfaces.IHaveSubscribers"
+    name="subscribe_others"
+    class="opencore.listen.browser.view.NuiManageMembersView"
+    permission="listen.SubscribeOthers"
+    template="subscribe_members.pt"
+    /-->
+
+
+  <include package=".topnav" />
+
+</configure>
