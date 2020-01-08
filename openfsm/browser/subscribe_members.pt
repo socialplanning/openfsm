@@ -7,23 +7,23 @@
       <div metal:use-macro="here/@@listen_macros/tabs"/>
       <div id="oc-content-main">
         <div class="oc-headingBlock">
-          <h2>Subscribe others directly without requiring them to confirm their membership</h2>
+          <h2 i18n:translate="">Subscribe others directly without requiring them to confirm their membership</h2>
         </div>
-	  <p>Use this form to add many emails at once to the mailing list without requiring each email owner to reply to an invitation mail in order to get subscribed. You may use this form only if you have explicit permission from all the owners of the email addresses to add them to this mailing list. This functionality is only available to a subset of trusted OpenFSM users and it should be used with extreme caution. It will have to be deactivated at the first sign of abuse, since it's very likely that the OpenFSM server will be blacklisted, in which case all emails from OpenFSM lists will be automatically marked as spam by most email providers.</p> 
+	  <p i18n:translate="">Use this form to add many emails at once to the mailing list without requiring each email owner to reply to an invitation mail in order to get subscribed. You may use this form only if you have explicit permission from all the owners of the email addresses to add them to this mailing list. This functionality is only available to a subset of trusted OpenFSM users and it should be used with extreme caution. It will have to be deactivated at the first sign of abuse, since it's very likely that the OpenFSM server will be blacklisted, in which case all emails from OpenFSM lists will be automatically marked as spam by most email providers.</p> 
           <!-- subscribe members -->
           <form name="subscribe-members" id="subscribe-members" method="post">
 
             <div class="field">
-              <label for="emails">Emails:</label>
-              (enter e-mail addresses or usernames; use commas or newlines to separate;)
+              <label for="emails" i18n:translate="">Emails:</label>
+              <span i18n:translate="">(enter e-mail addresses or usernames; use commas or newlines to separate;)</span>
               <div>
                 <textarea name="add_email"
                           rows="8" cols="20"></textarea>
               </div>
             </div>
 
-            <input class="context" type="submit" name="subscribe" value="Subscribe"/>
-            <a href="manage_membership">Cancel</a>
+            <input class="context" type="submit" name="subscribe" value="Subscribe" i18n:attributes="value" />
+            <a href="manage_membership" i18n:translate="">Cancel</a>
           </form>
 
 

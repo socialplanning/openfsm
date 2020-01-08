@@ -8,17 +8,28 @@
     <!-- <li><a tal:attributes="href string:${here/portal_url}/privacy">privacy</a></li> -->
   </ul>
 
-  <div id="oc-footer-about" class="oc-smallText">
-    <span tal:replace="string:${view/portal_title}" /> is
-    <a i18n:translate="footer_num_people" tal:attributes="href string:${here/portal_url}/people"><span i18n:name="num_people" tal:replace="string:${view/nusers}"/> people</a> and
-    <a tal:attributes="href string:${here/portal_url}/projects"><span tal:replace="string:${view/projects_served_count}"/> <span tal:replace="view/project_noun">project</span>s</a> since
-    <span tal:replace="string:${view/dob}" />.<br />
-<p>
-The content of this website is licensed under a 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 License</a>, unless otherwise noted by the content's producers.
-<br />
-    Powered by <a href="http://www.openplans.org">OpenPlans</a>.
-</p>
-    
+  <div id="oc-footer-about" class="oc-smallText" i18n:translate="footer_note">
+    <span tal:replace="string:${view/portal_title}" i18n:name="portal_title" /> is
+    <a tal:attributes="href string:${here/portal_url}/people"
+       i18n:name="num_people"
+       i18n:translate="footer_num_people">
+       <span tal:replace="string:${view/nusers}" i18n:name="num_people" /> people
+    </a> and
+    <a tal:attributes="href string:${here/portal_url}/projects"
+       i18n:name="projects"
+       i18n:translate="footer_projects">
+       <span tal:replace="string:${view/projects_served_count}" i18n:name="projects_served_count" /> <span tal:replace="view/project_noun" i18n:name="project_noun">project</span>s
+    </a> since
+    <span tal:replace="string:${view/dob}" i18n:name="view_dob" />.<br />
+    <p i18n:translate="footer_projects_content_website_licensed">
+      The content of this website is licensed under a 
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/" 
+         i18n:name="content_website_licensed" 
+         i18n:translate="footer_content_website_licensed">Creative Commons Attribution-Share Alike 3.0 License</a>, unless otherwise noted by the content's producers.
+      <br />
+      Powered by <a href="http://www.openplans.org" 
+                    i18n:name="openplans"
+                    i18n:translate="footer_openplans">OpenPlans</a>.
+      </p>
   </div>
 </div>

@@ -2,7 +2,9 @@
 
 <html i18n:domain="opencore" metal:use-macro="here/@@standard_macros/master">
   <head>
-    <title metal:fill-slot="title" tal:content="string:${view/area/Title} on ${view/portal_title}" />
+    <title i18n:translate="profile_window_title" metal:fill-slot="title">
+       <span i18n:name="profile_view_area_title" tal:replace="view/area/Title" /> on <span i18n:name="portal_title" tal:replace="view/portal_title" />
+    </title>
   </head>
   <body>
     <div metal:fill-slot="content">
@@ -10,7 +12,8 @@
         <div id="oc-member-badge" class="oc-boxy oc-clearAfter vcard">
           <div class="oc-avatar">
             <img class="photo" tal:attributes="src view/mangled_portrait_url" /><br />
-            <a tal:condition="view/viewingself" i18n:translate="profile_edit" class="oc-actionLink" href="profile-edit?field=portrait">Edit</a>
+            <a tal:condition="view/viewingself" class="oc-actionLink"
+               href="profile-edit?field=portrait" i18n:translate="profile_edit">Edit</a>
           </div>
           <div class="oc-member-details" tal:attributes="style python:'margin-left: %spx' % memberdata['portrait_width']">
             <metal:login-info use-macro="view/member_macros/macros/login-info" />
@@ -18,24 +21,24 @@
               <tal:fullname tal:define="fn memberdata/fullname" tal:condition="python:fn or view.viewingself()">
                 <dt><tal:label i18n:translate="profile_name">Name</tal:label>
                   <a tal:condition="view/viewingself" class="oc-actionLink"
-                      href="profile-edit?field=fullname">Edit</a>
+                     href="profile-edit?field=fullname" i18n:translate="profile_edit">Edit</a>
                 </dt>
                 <dd class="n" tal:condition="fn" tal:content="fn" />
-                <dd class="oc-discreetText" tal:condition="not:fn" tal:content="string:N/A" />
+                <dd class="oc-discreetText" tal:condition="not:fn" i18n:translate="profile_n_a">N/A</dd>
               </tal:fullname>
 
               <tal:location tal:define="loc memberdata/location" tal:condition="python:loc or view.viewingself()">
                 <dt><tal:label i18n:translate="profile_location">Location</tal:label>
                   <a tal:condition="view/viewingself" class="oc-actionLink"
-                    href="profile-edit?field=location">Edit</a>
+                     href="profile-edit?field=location" i18n:translate="profile_edit">Edit</a>
                 </dt>
                 <dd class="adr" tal:condition="loc"><span class="locality" tal:content="loc" /></dd>
-                <dd class="oc-discreetText" tal:condition="not:loc" tal:content="string:N/A" />
+                <dd class="oc-discreetText" tal:condition="not:loc" i18n:translate="profile_n_a">N/A</dd>
               </tal:location>
 
               <dt><tal:label tal:content="python:view.project_noun.title() + 's'">Projects</tal:label>
                 <a tal:condition="view/viewingself" class="oc-actionLink" 
-                   href="account">Manage</a>
+                   href="account" i18n:translate="">Manage</a>
               </dt>
               <dd tal:define="not_used view/populate_project_lists;
                               pub_projs nocall:view/public_projects;
@@ -57,7 +60,7 @@
                   </ul>
                 </tal:priv_projects>
                 <tal:no_projects condition="python: not (pub_projs or priv_projs)"> 
-                  none
+                  <span i18n:translate="">none</span>
                 </tal:no_projects>
               </dd>
               <dt i18n:translate="profile_member_home">
@@ -69,7 +72,7 @@
               </dd>
               <dt><tal:label i18n:translate="profile_website">Website</tal:label>
                 <a tal:condition="view/viewingself" class="oc-actionLink"
-                   href="profile-edit?field=website">Edit</a>
+                   href="profile-edit?field=website" i18n:translate="profile_edit">Edit</a>
               </dt>
               <dd>
                 <tal:haswebsite condition="memberdata/website">
@@ -85,7 +88,7 @@
                   </ul>
                 </tal:haswebsite>
                 <tal:nohaswebsite condition="not:memberdata/website">
-                  none
+                  <span i18n:translate="">none</span>
                 </tal:nohaswebsite>
               </dd>
             </dl>

@@ -3,7 +3,9 @@
 
 <html i18n:domain="opencore" metal:use-macro="here/@@standard_macros/master">
   <head>
-    <title metal:fill-slot="title" tal:content="string:${view/area/Title} on ${view/portal_title}" />
+    <title i18n:translate="profile_window_title" metal:fill-slot="title">
+       <span i18n:name="profile_view_area_title" tal:replace="view/area/Title" /> on <span i18n:name="portal_title" tal:replace="view/portal_title" />
+    </title>
   </head>
   <body>
     <div metal:fill-slot="content">
@@ -25,7 +27,7 @@
                                     class python: request.form.get('field') == 'fullname' and default or nothing" />
                 </li>
                 <li>
-                  <label i18n:translate="profile-edit_location_label" for="location">Location</label> (example: "New York, NY" or "cloud nine") <br />
+                  <label i18n:translate="profile-edit_location_label" for="location">Location</label> <i18n:block i18n:translate="">(example: "New York, NY" or "cloud nine")</i18n:block> <br />
                   <input type="text" id="location" name="location"
                     class="oc-autoFocus"
                     tal:attributes="value request/location | memberdata/location;
@@ -57,7 +59,7 @@
               tal:content="request/skills | memberdata/skills"></textarea>
 
   
-            <label for="affiliations">Affiliations</label>
+            <label for="affiliations" i18n:translate="">Affiliations</label>
             <textarea rows="1" cols="80" name="affiliations" id="affiliations"
               class="oc-autoFocus"
               tal:condition="python: request.form.get('field') == 'affiliations'"
@@ -67,7 +69,7 @@
               tal:content="request/affiliations | memberdata/affiliations"></textarea>
                 
             <tal:comment replace="nothing">
-              <label for="background">Background</label>
+              <label for="background" i18n:translate="">Background</label>
               <textarea rows="1" cols="80" name="background" id="background"
                 class="oc-autoFocus"
                 tal:condition="python: request.form.get('field') == 'background'"
@@ -76,7 +78,7 @@
                 tal:condition="python: request.form.get('field') != 'background'"
                 tal:content="request/background | memberdata/background"></textarea>
   
-              <label for="favorites">Favorites</label>
+              <label for="favorites" i18n:translate="">Favorites</label>
               <textarea rows="1" cols="80" name="favorites" id="favorites"
                 class="oc-autoFocus"
                 tal:condition="python: request.form.get('field') == 'favorites'"
@@ -93,8 +95,9 @@
               <input type="submit" 
                      name="task|update"
                      value="Update"
-                     class="oc-button oc-chooseThis" />
-              or <a i18n:translate="profile-edit_cancel" href="profile">Cancel</a>
+                     class="oc-button oc-chooseThis"
+                     i18n:attributes="value" />
+              <span i18n:translate="">or</span> <a i18n:translate="profile-edit_cancel" href="profile">Cancel</a>
             </li>
           </ul> 
       </div><!-- end #oc-content-main -->
