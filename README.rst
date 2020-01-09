@@ -50,7 +50,7 @@ Contribute
 
 - Issue Tracker: https://github.com/socialplanning/openfsm/issues
 - Source Code: https://github.com/socialplanning/openfsm
-- Documentation: http://www.coactivate.org/projects/opencore/blog/
+- Documentation: https://www.coactivate.org/projects/opencore/blog/
 - Translations: https://www.transifex.com/plone/social-planning/dashboard/
 
 
