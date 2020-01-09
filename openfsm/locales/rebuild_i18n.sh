@@ -39,10 +39,12 @@ ERRORS=`find ../ -regextype posix-extended -regex '.*\.(pt|html)' | xargs i18ndu
 WARNINGS=`find ../ -regextype posix-extended -regex '.*\.(pt|html)' | xargs i18ndude find-untranslated | grep -e '^-WARN' | wc -l`
 FATAL=`find ../ -regextype posix-extended -regex '.*\.(pt|html)' | xargs i18ndude find-untranslated | grep -e '^-FATAL' | wc -l`
 
-echo "\nThere are $ERRORS errors (almost definitely missing i18n markup)"
+echo ""
 echo "There are $WARNINGS warnings (possibly missing i18n markup)"
+echo "There are $ERRORS errors (almost definitely missing i18n markup)"
 echo "There are $FATAL fatal errors (template could not be parsed, eg. if it's not html)"
-echo "For more details, run 'find . -name \"*pt\" | xargs i18ndude find-untranslated' or"
+echo ""
+echo "For more details, run 'find ../ -name \"*pt\" | xargs i18ndude find-untranslated' or"
 echo "Look the rebuild i18n log generate for this script called 'rebuild_i18n.log' on locales dir"
 
 touch ./$LOGI18NDUDE
